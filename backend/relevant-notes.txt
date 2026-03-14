@@ -1,0 +1,3 @@
+- for the purposes of sac flies, I combined together fly ball rates and line drive rates to act as total fly ball rates
+- I didn't include speed stats/metrics for any players for simplicity
+- 

@@ -1,0 +1,1 @@
+- probability of runner getting thrown out at home on base hit (single, double)
