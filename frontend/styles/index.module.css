@@ -1,0 +1,34 @@
+body {
+    background-color: #F2F0EF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.titleText {
+    position: relative;
+    top: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.actions {
+    margin: auto;
+    padding: 0 50px 20px 50px;
+    text-align: center;
+    background-color: #949392;
+}
+
+.metaData {
+    margin-top: auto;
+    line-height: 0.2;
+    text-align: center;
+}

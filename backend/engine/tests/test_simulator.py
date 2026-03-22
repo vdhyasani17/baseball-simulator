@@ -27,6 +27,6 @@ player5 = Batter({"name":"Luis Arraez", "k_rate":0.061, "bb_rate":0.065, "hr_rat
 # Adam Dunn (power)
 player6 = Batter({"name":"Adam Dunn", "k_rate":0.286, "bb_rate":0.158, "hr_rate":462/8328, "avg": 0.237, "slg": 0.490, "babip":0.283})
 
-sim = Simulator(player2)
+sim = Simulator(player3)
 
 sim.simulate_at_bats(650)

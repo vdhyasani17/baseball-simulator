@@ -1,0 +1,17 @@
+/* Global styling (non-CSS-module) for layout and route-based body classes */
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #F2F0EF;
+  color: #000;
+}
+
+/* Route-specific body background colors */
+body.manage-entities {
+  background-color: #050A6D;
+}
+
+body.home {
+  background-color: #F2F0EF;
+}
