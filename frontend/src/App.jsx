@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import ManageEntitiesPage from '../pages/ManageEntitiesPage';
 import HomePage from '../pages/HomePage';
+import {Toaster} from 'sonner';
 
 const routeBodyClassMap = {
   '/': 'home',
@@ -22,10 +23,13 @@ function App(props) {
   }, [location.pathname]);
 
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/manage-entities" element={<ManageEntitiesPage />} />
-    </Routes>
+    <>
+      <Toaster position="top-center" richColors="true" toastOptions={{style: {scale: 1.3}}}/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/manage-entities" element={<ManageEntitiesPage />} />
+      </Routes>
+    </>
   );
 }
 

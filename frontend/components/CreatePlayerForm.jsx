@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from '../styles/CreatePlayerForm.module.css';
 import { axiosInstance } from '../axios';
+import { toast } from 'sonner';
 
 function CreatePlayerForm({ showForm, closeForm}) {
     const handleSubmit = async (e) => {
@@ -13,13 +14,14 @@ function CreatePlayerForm({ showForm, closeForm}) {
         try {
             const response = await axiosInstance.post("/create-batter", data);
             if (response.status === 200) {
-                alert('Batter created!');
+                toast.success(`${data.name} has been added successfully!`);
                 closeForm();
             } else {
-                alert('Error creating batter');
+                toast.error('Error creating batter');
                 console.log('Error response:', response);
             }
         } catch (error) {
+            toast.error('Unable to add player. Please try again.');
             console.error('Error:', error);
         }
     };
