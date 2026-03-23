@@ -1,8 +1,10 @@
 from enum import Enum
 import random
 
-from models.batter import Batter
-from models.team import Team
+from engine.models.batter import Batter
+from engine.models.team import Team
+
+import time
 
 class Base(Enum):
     THIRD = 0

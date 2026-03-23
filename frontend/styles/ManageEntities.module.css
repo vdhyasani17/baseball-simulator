@@ -1,4 +1,12 @@
-.page {
+.homeIcon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.mainContent {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -25,5 +25,15 @@ def create_batter():
     print("batter data:", batter_data)
     return batters_db.create_batter(batter_data)
 
+@app.route('/simulate-season/<player_id>', methods=['GET'])
+def simulate_player_season(player_id):
+    # Placeholder for player season simulation logic
+    return batters_db.simulate_player_season(player_id)
+
+@app.route('/simulate-game', methods=['POST'])
+def simulate_game():
+    #Something
+    pass
+
 if __name__ == '__main__':
     app.run(debug=True)

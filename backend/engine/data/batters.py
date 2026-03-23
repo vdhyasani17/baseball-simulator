@@ -1,4 +1,4 @@
-from models.batter import Batter
+from engine.models.batter import Batter
 
 luis_arraez = Batter({"name":"Luis Arraez", "k_rate":0.150, "bb_rate":0.130, "hr_rate":36/3533, "avg": 0.317, "slg": 0.413, "babip":0.329})
 

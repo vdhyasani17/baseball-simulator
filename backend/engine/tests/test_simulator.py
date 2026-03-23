@@ -1,5 +1,5 @@
-from models.batter import Batter
-from simulation.simulator import Simulator
+from engine.models.batter import Batter
+from engine.simulation.simulator import Simulator
 
 # Kyle Tucker (all around player)
 player1 = Batter({"name":"Kyle Tucker", "k_rate":0.158, "bb_rate":0.115, "hr_rate":147/3158, "avg": 0.273, "slg": 0.507, "babip":0.284})
@@ -27,6 +27,6 @@ player5 = Batter({"name":"Luis Arraez", "k_rate":0.061, "bb_rate":0.065, "hr_rat
 # Adam Dunn (power)
 player6 = Batter({"name":"Adam Dunn", "k_rate":0.286, "bb_rate":0.158, "hr_rate":462/8328, "avg": 0.237, "slg": 0.490, "babip":0.283})
 
-sim = Simulator(player3)
+sim = Simulator(player5)
 
 sim.simulate_at_bats(650)

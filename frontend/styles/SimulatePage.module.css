@@ -1,0 +1,46 @@
+.page {
+    background-color: #a05d27;
+    min-height: 100vh;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.buttonsContainer {
+    display: flex;
+    background-color: #b3a274;
+    flex-direction: column;
+    width: 40%;
+    aspect-ratio: 33/36;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.simulateBtn {
+    cursor: pointer;
+    background-color: #a05d27;
+    padding: 10px 0;
+    border: 1px solid black;
+    width: 50%;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.simulateBtn:hover {
+    background-color: #8c4617;
+}
+
+.homeIcon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: black;
+    cursor: pointer;
+}
