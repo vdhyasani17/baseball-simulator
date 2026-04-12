@@ -53,6 +53,8 @@ class Batter:
                 else:
                     return "3B"
             else:   # these are outs (flyballs, popups, and groundballs)
+                # right now, I'm using league-avg groundball and flyball rates
+                # maybe later, use player-specific rates
                 r_out = random.random()
                 if r_out <= 0.493:
                     return "GBO"
