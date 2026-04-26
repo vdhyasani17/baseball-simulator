@@ -1,4 +1,4 @@
-from engine.models.batter import Batter
+from core.engine.models.batter import Batter
 
 class Simulator:
     

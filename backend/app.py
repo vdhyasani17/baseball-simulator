@@ -4,7 +4,7 @@ from pymongo import MongoClient # type: ignore
 from pymongo.server_api import ServerApi # type: ignore
 from dotenv import load_dotenv # pyright: ignore[reportMissingImports]
 import os
-from database import batters_db # pyright: ignore[reportMissingImports]
+from core.database import batters_db # pyright: ignore[reportMissingImports]
 
 load_dotenv()
 

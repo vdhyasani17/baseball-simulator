@@ -1,12 +1,12 @@
 import json
 
-from engine.models.batter import Batter
+from core.engine.models.batter import Batter
 from bson import ObjectId, json_util # type: ignore
 from pymongo import MongoClient # type: ignore
 from pymongo.server_api import ServerApi # type: ignore
 import os
 from dotenv import load_dotenv # pyright: ignore[reportMissingImports]
-from engine.simulation.simulator import Simulator # pyright: ignore[reportMissingImports]
+from core.engine.simulation.simulator import Simulator # pyright: ignore[reportMissingImports]
 
 load_dotenv()
 
